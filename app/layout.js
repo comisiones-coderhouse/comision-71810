@@ -1,4 +1,5 @@
 import "./globals.css";
+//import "./index.scss";
 
 function RootLayout({ children }) {
   return (

@@ -1,0 +1,35 @@
+Clase 1 : 
+
+
+    - PÁGINA NEXT : https://nextjs.org/learn/dashboard-app
+    - Biome Lintern  : https://biomejs.dev/
+
+
+Clase 2 : 
+
+Instalacion de SASS : 
+    - npm i sass | npm install sass
+
+
+Extensiones de VS Code : 
+
+    - Git Lens : https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+    - Tailwind : https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+    - Tailwind v4 : https://tailwindcss.com/docs/v4-beta#installing-with-post-css
+    
+Links Utiles : 
+
+https://nextjs.org/docs/app/api-reference/components/image#props
+
+Destructuring : 
+
+    const persona = { nombre : "Horacio", edad : 35 }
+    const {nombre,edad} = persona
+
+    notacion de punto
+    persona.nombre
+    persona.edad
+
+    notacion de corchete
+    persona["nombre"]
+    persona["edad"]
