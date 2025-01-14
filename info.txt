@@ -33,3 +33,23 @@ Destructuring :
     notacion de corchete
     persona["nombre"]
     persona["edad"]
+
+
+Clase 3 :
+
+
+Extensiones de VS Code : 
+
+    - Live Share : https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
+
+    - Pendiente Explicar : 
+        -useCallback
+        -repaso de .then/.catch vs async/await
+
+
+- layout.js : UI que se ve de acuerdo a la URL en la que estas y dentro del cual se renderiza el page.js
+- page.js : UI que se ve de acuerdo a la URL en la que estas 
+
+
+http://localhost:3000"/"
+http://localhost:3000"/contacto"

@@ -1,10 +1,12 @@
 import "./globals.css";
-//import "./index.scss";
+import Header from "@/components/Header";
 
 function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body>
+        <Header/>        
         {children}
       </body>
     </html>
