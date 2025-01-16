@@ -53,3 +53,17 @@ Extensiones de VS Code :
 
 http://localhost:3000"/"
 http://localhost:3000"/contacto"
+
+
+
+
+Clase 4 :
+
+Open Graph (lo que hace las miniaturas cuando compartis un link) : https://ogp.me/
+
+- Metadata
+- Layout anidados (ya esta, mas o menos)
+- Rutas Dinamicas (ya esta, mas o menos)
+
+- Route Handlers
+- Fetch y Promises 
