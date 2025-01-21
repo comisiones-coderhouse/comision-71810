@@ -7,7 +7,7 @@ function Header() {
             <h1 className="font-bold text-xl">Comision 71810</h1>
             <nav className="flex gap-4">
                 <Link href="/">Home</Link>
-                <Link href="/product">productos</Link>
+                <Link href="/products">productos</Link>
                 <Link href="/admin">admin</Link>
                 <Link href="/carrito">
                     <ShoppingCart />

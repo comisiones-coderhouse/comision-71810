@@ -65,5 +65,17 @@ Open Graph (lo que hace las miniaturas cuando compartis un link) : https://ogp.m
 - Layout anidados (ya esta, mas o menos)
 - Rutas Dinamicas (ya esta, mas o menos)
 
+
+
+
+
+Clase 5 :
+
+- export / imports  (ya esta)
+- Metadata (esta algo)
 - Route Handlers
 - Fetch y Promises 
+
+
+- NextJS Snippets : https://marketplace.visualstudio.com/items?itemName=PulkitGangwar.nextjs-snippets
+- Thunder Client : https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client
