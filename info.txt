@@ -72,10 +72,45 @@ Open Graph (lo que hace las miniaturas cuando compartis un link) : https://ogp.m
 Clase 5 :
 
 - export / imports  (ya esta)
-- Metadata (esta algo)
-- Route Handlers
-- Fetch y Promises 
-
 
 - NextJS Snippets : https://marketplace.visualstudio.com/items?itemName=PulkitGangwar.nextjs-snippets
 - Thunder Client : https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client
+
+
+Clase 6 : 
+
+- React Skeletons : https://www.npmjs.com/package/react-loading-skeleton
+- Next Auth : https://authjs.dev/?_gl=1*wikwtw*_gcl_au*NzQ0NzY1NjA0LjE3Mzc2MzIxMDE.
+- Lucia Auth : https://lucia-auth.com/
+- Clerk : https://clerk.com/docs
+- zustand : https://github.com/pmndrs/zustand
+
+
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension burkeholland.simple-react-snippets
+code --install-extension chakrounanas.turbo-console-log
+code --install-extension dionmunk.vscode-notes
+code --install-extension diz.ecsstractor-port
+code --install-extension dsznajder.es7-react-js-snippets
+code --install-extension eamodio.gitlens
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
+code --install-extension lakshits11.monokai-pirokai
+code --install-extension mermaidchart.vscode-mermaid-chart
+code --install-extension miguelsolorio.fluent-icons
+code --install-extension miguelsolorio.symbols
+code --install-extension mongodb.mongodb-vscode
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension nextbook.file-and-folder-icons
+code --install-extension patbenatar.advanced-new-file
+code --install-extension pranaygp.vscode-css-peek
+code --install-extension pulkitgangwar.nextjs-snippets
+code --install-extension rangav.vscode-thunder-client
+code --install-extension ritwickdey.liveserver
+code --install-extension supermaven.supermaven
+code --install-extension vstirbu.vscode-mermaid-preview
+code --install-extension xabikos.javascriptsnippets
+
+- Metadata (esta algo)
+- Route Handlers 
+- Fetch y Promises 

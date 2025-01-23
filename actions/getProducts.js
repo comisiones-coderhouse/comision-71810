@@ -3,7 +3,7 @@ export async function getProducts(categoria) {
     try {
 
         const url = categoria
-            ? "https://dummyjson.com/products/category/" + categoria
+            ? "http://localhost:3000/api/products?categoria=" + categoria
             : "http://localhost:3000/api/products"
 
         const data = await fetch(url)

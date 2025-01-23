@@ -1,19 +1,11 @@
 import PageTitle from "@/components/PageTitle";
 import Link from "next/link";
 
-//https://localhost:3000/product?cat=home
-//https://localhost:3000/product/[cat]/[id]
-
-//https://localhost:3000/products -> todos los productos
-//https://localhost:3000/products/electro -> todos los productos de electro
-//https://localhost:3000/products/hogar -> todos los productos de hogar
-//https://localhost:3000/product/[id]
-
 export default function ProductLayout({ children }) {
 
     const categorias = [
-        { id: 1, name: "laptops" },
-        { id: 2, name: "tablets" },
+        { id: 1, name: "Living" },
+        { id: 2, name: "Dormitorio" },
     ]
 
     return (

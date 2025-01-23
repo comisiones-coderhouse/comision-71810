@@ -1,33 +1,18 @@
-import { getProducts } from "@/actions/getProducts";
 import PageTitle from "@/components/PageTitle";
-import ProductList from "@/components/ProductList";
 import ProductListContainer from "@/components/ProductListContainer";
+import ProductsLoader from "@/components/ProductsLoader";
 import { Suspense } from "react";
 
-//Suspense
-
 export default async function ProductPage() {
-
-    /* const { payload: products, error, message } = await getProducts() */
-
-    /* if (error) {
-        return (
-            <>
-                <PageTitle>Error</PageTitle>
-                <p>{message}</p>
-            </>
-        )
-    } */
 
     return (
         <>
             <PageTitle>Productos</PageTitle>
-            {/* <ProductList productos={products} /> */}
-
-            <Suspense fallback={<div>Loading...</div>}>
-                <ProductListContainer />
-            </Suspense>
-
+            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <Suspense fallback={<ProductsLoader/>}>
+                    <ProductListContainer />
+                </Suspense>
+            </section>
         </>
     );
 }
