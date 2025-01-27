@@ -87,7 +87,7 @@ Clase 6 :
 
 
 code --install-extension bradlc.vscode-tailwindcss
-code --install-extension burkeholland.simple-react-snippets
+code --install-extension burkeholland.simple-react-snippets (esta es la que viene con el comando "cp" para hacer el Context Provider)
 code --install-extension chakrounanas.turbo-console-log
 code --install-extension dionmunk.vscode-notes
 code --install-extension diz.ecsstractor-port
@@ -112,5 +112,4 @@ code --install-extension vstirbu.vscode-mermaid-preview
 code --install-extension xabikos.javascriptsnippets
 
 - Metadata (esta algo)
-- Route Handlers 
-- Fetch y Promises 
+- Caching, revalidaciones, y generateStaticParams

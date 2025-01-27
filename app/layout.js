@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import "./globals.css";
 import AuthContextProvider from "@/providers/AuthProvider";
+import "./globals.css";
 
 
 export const metadata = {
@@ -15,17 +15,13 @@ function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      {/* <meta name="author" content="Horacio Gutierrez" />
-      <title>Comision 71810</title> */}
       <body className="bg-background min-h-screen flex flex-col">
         <AuthContextProvider>
-          {/* <CarritoProvider> */}
-            <Header />
-            <main className="grow p-4">
-              {children}
-            </main>
-            <Footer />
-          {/* </CarritoProvider> */}
+          <Header />
+          <main className="grow p-4">
+            {children}
+          </main>
+          <Footer />
         </AuthContextProvider>
       </body>
     </html>

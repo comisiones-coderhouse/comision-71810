@@ -3,10 +3,12 @@ import Link from "next/link"
 
 function Header() {
     return (
-        <header className="px-2 py-4 flex justify-between items-center bg-primary shadow-md text-white">
-            <h1 className="font-bold text-xl">Comision 71810</h1>
-            <nav className="flex gap-4">
-                <Link href="/">Home</Link>
+        <header className="p-4 flex justify-between items-center bg-primary shadow-md text-white">
+            <Link href="/">
+                <h1 className="font-bold text-xl">Comision 71810</h1>
+            </Link>
+            <nav className="flex gap-4 capitalize">
+                <Link href="/">home</Link>
                 <Link href="/products">productos</Link>
                 <Link href="/admin">admin</Link>
                 <Link href="/carrito">

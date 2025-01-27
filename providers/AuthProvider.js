@@ -3,7 +3,7 @@
 import { auth } from "@/firebase";
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
-
+  
 //2) crear un contexto en una variable
 export const AuthContext = createContext();
 

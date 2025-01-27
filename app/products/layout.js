@@ -13,7 +13,7 @@ export default function ProductLayout({ children }) {
             <aside className="min-w-[250px]">
                 <PageTitle>Filtros</PageTitle>
                 <div className="flex flex-col gap-4">
-                    <Link href="/products">todos</Link>
+                    <Link href="/products">Todos</Link>
                     {categorias.map((categoria) => {
                         return (
                             <Link key={categoria.id} href={`/products/${categoria.name}`}>{categoria.name}</Link>

@@ -1,9 +1,10 @@
 import { getProducts } from "@/actions/getProducts"
 import ProductList from "./ProductList"
+import PageTitle from "./PageTitle"
 
-async function ProductListContainer() {
+async function ProductListContainer({ categoria }) {
 
-    const { payload: products, error, message } = await getProducts()
+    const { payload: products, error, message } = await getProducts(categoria)
 
     if (error) {
         return (

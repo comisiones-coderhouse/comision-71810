@@ -1,6 +1,7 @@
 import { getProducts } from "@/actions/getProducts"
 import PageTitle from "@/components/PageTitle"
 import ProductList from "@/components/ProductList"
+import ProductListSection from "@/components/ProductListSection"
 
 export default async function ProductsByCategoryPage({ params }) {
 
@@ -20,7 +21,7 @@ export default async function ProductsByCategoryPage({ params }) {
   return (
     <>
       <PageTitle>Productos de {cat}</PageTitle>
-      <ProductList productos={products} />
+      <ProductListSection categoria={cat} />
     </>
   )
 }
