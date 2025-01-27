@@ -113,3 +113,17 @@ code --install-extension xabikos.javascriptsnippets
 
 - Metadata (esta algo)
 - Caching, revalidaciones, y generateStaticParams
+
+
+
+After del 27/01
+
+Links : 
+
+    Framer Motion (animaciones) : https://motion.dev/docs/react-quick-start
+    GSAP (animaciones) : https://gsap.com/
+    - https://github.com/romboHQ/tailwindcss-motion
+    - https://github.com/midudev/tailwind-animations
+    React Toastify (notificaciones) : https://www.npmjs.com/package/react-toastify
+    ShadCN (como bootstrap pero bueno y para TS) : https://ui.shadcn.com/
+    https://tailblocks.cc/

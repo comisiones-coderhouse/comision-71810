@@ -1,6 +1,11 @@
 import PageTitle from "@/components/PageTitle";
 import Link from "next/link";
 
+export const metadata = {
+    title: "Coder-Commerce - Productos",
+}
+
+
 export default function ProductLayout({ children }) {
 
     const categorias = [

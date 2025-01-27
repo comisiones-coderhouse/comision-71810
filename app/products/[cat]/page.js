@@ -3,6 +3,7 @@ import PageTitle from "@/components/PageTitle"
 import ProductList from "@/components/ProductList"
 import ProductListSection from "@/components/ProductListSection"
 
+
 export default async function ProductsByCategoryPage({ params }) {
 
   const { cat } = await params
