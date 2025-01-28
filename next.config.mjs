@@ -4,6 +4,9 @@ const nextConfig = {
         remotePatterns : [
             {
                 hostname : "cdn.dummyjson.com"
+            },
+            {
+                hostname : "placehold.co"
             }
         ]
     }

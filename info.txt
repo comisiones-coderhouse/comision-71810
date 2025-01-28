@@ -96,7 +96,6 @@ code --install-extension eamodio.gitlens
 code --install-extension github.copilot
 code --install-extension github.copilot-chat
 code --install-extension lakshits11.monokai-pirokai
-code --install-extension mermaidchart.vscode-mermaid-chart
 code --install-extension miguelsolorio.fluent-icons
 code --install-extension miguelsolorio.symbols
 code --install-extension mongodb.mongodb-vscode
@@ -108,7 +107,6 @@ code --install-extension pulkitgangwar.nextjs-snippets
 code --install-extension rangav.vscode-thunder-client
 code --install-extension ritwickdey.liveserver
 code --install-extension supermaven.supermaven
-code --install-extension vstirbu.vscode-mermaid-preview
 code --install-extension xabikos.javascriptsnippets
 
 - Metadata (esta algo)

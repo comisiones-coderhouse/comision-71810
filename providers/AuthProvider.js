@@ -1,48 +1,41 @@
 "use client";
-//1) importar createContext
 import { auth } from "@/firebase";
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
-  
-//2) crear un contexto en una variable
+
 export const AuthContext = createContext();
 
-//3) sacarle el Provider al contexto
 const { Provider } = AuthContext;
 
 
-//4) crear un nuevo componente que use el Provider dentro de su retorno
 const AuthContextProvider = (props) => {
 
     const [loggedIn, setLoggedIn] = useState(false)
+    const [currentUser, setCurrentUser] = useState(null)
 
     useEffect(() => {
-
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 setLoggedIn(true)
+                setCurrentUser(user)
             } else {
                 setLoggedIn(false)
+                setCurrentUser(null)
             }
         })
-
     }, [])
 
-    const handleLogin = async () => {
-        const resultado = await signInWithEmailAndPassword(auth, "test1@test.com", "123456")
-        console.log("🚀 ~ handleLogin ~ resultado:", resultado)
+    const handleLogin = async (email, password) => {
+        await signInWithEmailAndPassword(auth, email || "test1@test.com", password || "123456")
     }
 
     const handleLogout = async () => {
         await signOut(auth)
     }
 
-    //5) configurar el prop "value" del Provider
     return (
-        <Provider value={{ loggedIn, handleLogin, handleLogout }}>
-            {/* <CarritoProvider> */}
-                {props.children}
-            {/* </CarritoProvider> */}
+        <Provider value={{ currentUser, loggedIn, handleLogin, handleLogout }}>
+            {props.children}
         </Provider>
     );
 }

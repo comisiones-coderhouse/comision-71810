@@ -1,5 +1,7 @@
 import { ShoppingCart } from "lucide-react"
 import Link from "next/link"
+import AuthLink from "./AuthLink"
+import AdminLink from "./AdminLink"
 
 function Header() {
     return (
@@ -10,10 +12,11 @@ function Header() {
             <nav className="flex gap-4 capitalize">
                 <Link href="/">home</Link>
                 <Link href="/products">productos</Link>
-                <Link href="/admin">admin</Link>
+                <AdminLink/>
                 <Link href="/carrito">
                     <ShoppingCart />
                 </Link>
+                <AuthLink />
             </nav>
         </header>
     )

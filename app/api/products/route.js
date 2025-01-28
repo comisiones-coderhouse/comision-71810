@@ -1,5 +1,5 @@
 import { db } from "@/firebase"
-import { collection, getDocs, where, query } from "firebase/firestore"
+import { collection, getDocs, where, query, addDoc } from "firebase/firestore"
 import { NextResponse } from "next/server"
 
 
@@ -42,10 +42,25 @@ export async function GET(request) {
 
 export async function POST(req) {
 
-    console.log("POST")
-    //Asi se obtiene el body de la peticion
-    //fetch("url", {body : JSON.stringify({name: "Horacio"})})
-    console.log(await req.json())
+    const producto = await req.json()
 
-    return NextResponse.json({ message: "POST" })
+    try {
+
+        const productsCollection = collection(db, "products")
+        await addDoc(productsCollection, { ...producto })
+
+        return NextResponse.json({
+            message: "Producto creado con exito",
+            error: false,
+            payload: null
+        })
+
+    } catch (error) {
+
+        return NextResponse.json({
+            message: "Error al crear el producto",
+            error: true,
+            payload: null
+        })
+    }
 }
