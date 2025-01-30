@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"
 import { useContext } from "react"
 
 
-function AuthLink() {
+function AuthLink({ handle }) {
 
     const { loggedIn, handleLogin, handleLogout } = useContext(AuthContext)
     const router = useRouter()
@@ -17,6 +17,7 @@ function AuthLink() {
         } else {
             router.push("/login")
         }
+        handle()
     }
 
     return (

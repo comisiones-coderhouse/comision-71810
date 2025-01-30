@@ -2,7 +2,7 @@ import PageTitle from "@/components/PageTitle";
 import Link from "next/link";
 
 export const metadata = {
-    title: "Coder-Commerce - Productos",
+    title: "Productos",
 }
 
 

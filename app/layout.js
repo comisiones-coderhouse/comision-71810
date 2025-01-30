@@ -3,10 +3,14 @@ import Header from "@/components/Header";
 import AuthContextProvider from "@/providers/AuthProvider";
 import { ToastContainer } from "react-toastify";
 import "./globals.css";
+import CartContextProvider from "@/providers/CartProvider";
 
 
 export const metadata = {
-  title: "Coder-Commerce - Aplicacion de comercio electrónico",
+  title: {
+    template: "Coder-Commerce - %s",
+    default: "Coder-Commerce",
+  },
   authors: [{ name: "Horacio Gutierrez" }],
   description: "Aplicacion de comercio electrónico",
   keywords: "comercio electrónico, aplicación, nextjs, tailwind, sass, react, lucide, tailwindcss, Horacio Gutierrez, programador, argentina, ecommerce"
@@ -18,12 +22,14 @@ function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-background min-h-screen flex flex-col">
         <AuthContextProvider>
-          <Header />
-          <main className="grow p-4 flex flex-col">
-            {children}
-          </main>
-          <Footer />
-          <ToastContainer/>
+          <CartContextProvider>
+            <Header />
+            <main className="grow p-4 flex flex-col">
+              {children}
+            </main>
+            <Footer />
+            <ToastContainer />
+          </CartContextProvider>
         </AuthContextProvider>
       </body>
     </html>

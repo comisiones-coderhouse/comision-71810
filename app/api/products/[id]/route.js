@@ -2,9 +2,9 @@ import { NextResponse } from "next/server"
 import { collection, getDoc, doc } from "firebase/firestore"
 import { db } from "@/firebase"
 
-export async function GET(request) {
+export async function GET(request, { params }) {
 
-    const id = "0DT9KWqsw2x0sanAnk7a"
+    const { id } = await (params)
 
     const productsCollection = collection(db, "products")
     const docRef = doc(productsCollection, id)
